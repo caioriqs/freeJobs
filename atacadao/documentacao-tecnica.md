@@ -292,6 +292,26 @@ dataLayer.push({
 
 <br />
 
+**13 - Scroll:**<br />
+
+- **Quando:** Ao "rolar" a página para baixo;
+- **Obs:** o evento deve ser disparado uma única vez por página
+
+```html
+dataLayer.push({
+		'event': 'scroll',
+		'eventCategory': 'site:home',
+		'eventAction': 'scroll',
+		'eventLabel': '[scroll-percent]'
+	});
+```
+
+| Variável 			| Exemplo 					| Descrição															|
+| :----------------	| :------------------------	| :---------------------------------------------------------------	|
+| [scroll-percent]	| '25', '50', '75' e '100'	| retornar a porcentagem da tela que o cliente "rolou" para baixo	|
+
+<br />
+
 ---
 
 ### Especificação de Conversões:
