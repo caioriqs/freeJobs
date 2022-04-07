@@ -30,7 +30,7 @@ Este documento tem como objetivo instruir a implementação do Google Tag Manage
 > Para instalar o Google Tag Manager no seu site, basta seguir os seguintes passos: 
 
 **Dentro do "head"**<br />
-Cole esse código o mais alto possível na tag <head> da página:
+Cole esse código o mais alto possível na tag *head* da página:
 
 ```html
 <!-- Google Tag Manager -->
@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <br />
 
 **Início do "body"**<br />
-Além disso, cole esse código imediatamente após a tag de abertura <body>:
+Além disso, cole esse código imediatamente após a tag de abertura *body*:
 
 ```html
 <!-- Google Tag Manager (noscript) -->
