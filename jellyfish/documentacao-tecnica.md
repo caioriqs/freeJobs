@@ -472,9 +472,8 @@ dataLayer.push({
 <script>
 dataLayer.push({
 	'event': 'purchase',
-	'eventCategory': '',
-	'eventAction': '',
-	'eventLabel': '',
+	'eventCategory': 'ecommerce',
+	'eventAction': 'purchase'
 	'ecommerce': {
 		'purchase': {
 			'actionField': {
