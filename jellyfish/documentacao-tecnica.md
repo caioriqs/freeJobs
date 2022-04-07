@@ -165,6 +165,36 @@ Caso a informação solicitada não estiver disponível retornar 'nao_disponivel
 
 <br />
 
+**2 - Clique Mini-Basket:**<br />
+
+- **Quando:** Ao interagir com o Mini-Basket;
+- **Onde:** Canto direito da tela;
+
+```html
+<!-- Use se o elemento for um link -->
+<a href="#"
+	class="gtm-link-event"
+	gtm-event-data-category="[[page]]:mini-basket"
+	gtm-event-data-action="'clique:camiseta' ou 'clique:checkout'"
+	gtm-event-data-label="[[item]]"
+>Link</a>
+
+<!-- Use se o elemento não for um link -->
+<i 	class="gtm-element-event"
+	gtm-event-data-category="[[page]]:mini-basket"
+	gtm-event-data-action="clique:[[item]] ou [[checkout]]"
+	gtm-event-data-label="[[item]]"
+>Botão</i>
+```
+
+| Variável 			| Exemplo 										| Descrição				|
+| :----------------	| :--------------------------------------------	| :---------------		|
+| [[page]]		| 'home', 'detail_item' e etc						| Página de interação  	|
+| [[item]]		| 'compton t-shirt', 'flexigen t-shirt' e etc		| Nome do item  		|
+
+
+<br />
+
 ### Product Impression:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no carregamento de uma página de lista de produtos.
@@ -524,7 +554,7 @@ dataLayer.push({
 | category 		| [[categoria-produto]] 	| 'camiseta'				| Categoria do produto 					|
 | variant 		| [[variacao-produto]] 		| 'g - amarelo'				| Variação do produto (tamanho - cor)	|
 | quantity 		| [[quantidade]] 			| '2'						| Quantidade de produtos 				|
-| coupon		| [[cupom-produto]]	 		| 'ibbys10off'					| Cupom de desconto usado no produto	|
+| coupon		| [[cupom-produto]]	 		| 'ibbys10off'				| Cupom de desconto usado no produto	|
 
 <br />
 
