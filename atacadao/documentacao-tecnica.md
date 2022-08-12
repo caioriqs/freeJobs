@@ -120,6 +120,21 @@ dataLayer.push({
 	});
 ```
 
+<br />
+
+
+**4 - Times Futebol:**<br />
+
+- **Quando:** Ao clicar no botao abaixo do compartivo dos Planos;
+- **Onde:** Comparativo de Planos;
+
+```html
+dataLayer.push({
+		'event': 'event',
+		'nome-evento': 'display_3mensalidades'
+	});
+```
+
 
 ---
 
